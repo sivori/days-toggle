@@ -1,0 +1,28 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#year-grid {
+    display: grid;
+    grid-template-columns: repeat(30, 30px); /* Wrap after 30 days */
+    grid-gap: 5px; /* Adjust spacing between days as needed */
+    text-align: center;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.day.active {
+    background-color: #3498db;
+    color: white;
+}
